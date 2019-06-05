@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Articles from '../components/Articles';
+import Loading from '../components/Loading'
 import { withRouter } from 'react-router-dom'
 
 const ArticlesContainer = (props) => {
@@ -23,7 +24,7 @@ const ArticlesContainer = (props) => {
 
   return ( 
     loading ? 
-    <h1>loading...</h1> 
+    <Loading />
     : 
     <React.Fragment>
       <h2>Browsing {getCategory()}</h2>

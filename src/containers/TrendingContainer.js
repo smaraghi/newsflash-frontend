@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import TrendingItem from '../components/TrendingItem';
 import { Item } from 'semantic-ui-react'
 import TrendingMenu from '../components/TrendingMenu';
+import Loading from '../components/Loading'
 import ShopContext from '../context/shop-context';
 
 const TrendingContainer = () => {
@@ -37,7 +38,7 @@ const TrendingContainer = () => {
    
   return ( 
     loading ?
-    <h1>loading...</h1>
+    <Loading />
     :
     <div className='trending-container'>
       <TrendingMenu />
