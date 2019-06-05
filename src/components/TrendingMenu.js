@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Menu } from 'semantic-ui-react'
 import ShopContext from '../context/shop-context'
 
-const TrendingMenu = props => {
+const TrendingMenu = () => {
   const context = useContext(ShopContext)
   
   return (

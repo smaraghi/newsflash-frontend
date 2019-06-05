@@ -5,7 +5,7 @@ const ArticleModal = (props) => {
   const [articleData, setArticleData] = useState({likes: 0, dislikes: 0})
 
   useEffect(() => {
-    fetch('/articles/get_data', {
+    fetch('https://newsflash-backend.herokuapp.com/articles/get_data', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json', Accept: 'application/json'
@@ -26,7 +26,7 @@ const ArticleModal = (props) => {
   }
 
   const saveArticleData = (user_act) => {
-    fetch('/articles/', {
+    fetch('https://newsflash-backend.herokuapp.com/articles/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json', Accept: 'application/json'

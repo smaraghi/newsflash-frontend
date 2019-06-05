@@ -12,7 +12,7 @@ const TrendingContainer = () => {
 
   useEffect(() => {
     setLoading(true)
-    fetch('/articles/get_trending')
+    fetch('https://newsflash-backend.herokuapp.com/articles/get_trending')
     .then(res => res.json())
     .then(articles => {
       setTrendingArticles(articles)

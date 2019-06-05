@@ -14,7 +14,7 @@ const ArticlesContainer = (props) => {
 
   useEffect(() => {
     setLoading(true)
-    fetch('/articles/' + getCategory())
+    fetch('https://newsflash-backend.herokuapp.com/articles/' + getCategory())
     .then(res => res.json())
     .then(articles => {
       setArticles(articles.articles)
