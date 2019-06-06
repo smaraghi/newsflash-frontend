@@ -8,7 +8,7 @@ NewsFlash is a lightweight, high impact burst of current events! Browsing the la
 
 #### What is the Tech Stack?
 
-This source code is broken up into two parts. The backend is built as a Rails API and the frontend is built using the React/Redux libraries. 
+This source code is broken up into two repositories. The backend is built as a Rails API and the frontend is built using the React library and the Context API for state management. 
 
 #### How to Run NewsFlash?
 
